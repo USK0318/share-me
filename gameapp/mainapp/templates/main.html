@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            #head{
+                height: 100px;
+                background-color: rgb(224, 108, 108);
+            }
+            #head h1{
+                color: white;
+                position: relative;
+                font-size: xxx-large;
+                top: 20px;
+                left: 50px;
+            }
+            #box{
+                width: 350px;
+                height: 300px;
+                background-color:aliceblue;
+                position: relative;
+                top: -160px;
+                left: 100px;
+                border-radius: 10px;
+                border: dotted 1px;
+            }
+            button:hover{
+                background-color:rgb(250, 108, 108) ;
+                color: white;
+            }
+            #ip2:hover{
+                background-color:rgb(250, 108, 108) ;
+                color: white;
+            }
+            button{
+                width: 230px;
+                height: 60px;
+                border-radius: 5px;
+                font-size: x-large;
+
+            }
+            #b1{
+                position: relative;
+                top: 60px;
+                left: 50px;
+            }
+            #b2{
+                position: relative;
+                top: 90px;
+                left: 50px;
+            }
+            input{
+                width: 230px;
+                height: 60px;
+                border-radius: 5px;
+                font-size: x-large;
+            }
+            #ip1{
+                position: relative;
+                top: 80px;
+                left: 70px;
+            }
+            #ip2{
+                width: 200px;
+                height:50px;
+                position: relative;
+                top: 110px;
+                left: 70px;
+                border-radius: 5px;
+                border: solid 1px;
+            }
+            img{
+                position: relative;
+                left: 650px;
+                top: 100px;
+            }
+            #boxr{
+                position: relative;
+                top: 40px;
+                left: 55px;
+            }
+            #sai{
+                margin-top: 15px;
+            }
+            #sai:hover{
+                background-color:rgb(250, 108, 108) ;
+                color: white;
+            }
+            #donl{
+                font-size: large;
+                position: relative;
+                top: 55px;
+                left: 80px;
+                text-decoration: none;
+            }
+            #donl2{
+                
+                position: relative;
+                top: 50px;
+                left: 95px;
+               color: rgb(250, 108, 108);
+            }
+            #boxs{
+                position: relative;
+                top: 80px;
+                left: 30px;
+            }
+            #boxs h2{
+                position: relative;
+                top: 10px;
+                left: 75px;
+            }
+            #hir{
+                position: relative;
+                top: 20px;
+                left:77px
+            }
+            #xyz{
+                position: relative;
+                top: -80px;
+                left: -80px;
+                height: 40px;
+                width: 80px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="head">
+            <h1>Send Any Where</h1>
+        </div>
+       <div id="body">
+        <img src="https://talkroute.com/wp-content/uploads/2016/07/send-email.png" alt="">
+        <div id="box">
+            {% block main %}
+            <a href="{% url 'sendurl' %}"><button id="b1">Send</button></a><br><br>
+            <a href="{% url 'reciveurl' %}"><button id="b2">Receive</button></a>
+            {%endblock%}
+     
+        </div>
+       </div>
+       <script>
+            function chick(c){
+                if(c==1){
+                    let a=document.getElementById('js').value
+                    if(a.length==0){
+                            alert('Enter The Code!')
+                            return false
+                    }
+                    else{
+                        return true
+                    }
+                }
+                else{
+                    let a=document.getElementById('ip1').value
+                        if(a.length==0){
+                                alert('Plese Upload The File!')
+                                return false
+                        }
+                        else{
+                            return true
+                        }
+                }
+        }
+        </script>
+    </body>
+</html>

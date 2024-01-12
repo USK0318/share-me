@@ -1,0 +1,22 @@
+
+{% extends 'first.html' %}
+{% block main %}
+<a href="{% url 'main' %}"><button id="xyz">🏠</button></a>
+    <form action="" method="post" onsubmit=return(chick(1))>
+        {% csrf_token %}
+        <div id="boxr">
+        <input type="text" name="ip" placeholder="  Enter The ID" id="js"><br><br>
+        <input type="submit" name="" id="sai">
+    </div>
+    </form><br>
+    {% for i in messages %}
+    <h2 id="donl2">{{i}}</h2>
+    {% endfor %}
+
+
+{% if nom == 2 %}
+   <a  id='donl' href="{{a.data.url}}" download="{{a.data.url}}"><b>Click here to download</b></a>
+{% endif %}
+{% endblock %}
+      
+ 
