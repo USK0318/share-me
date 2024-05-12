@@ -83,11 +83,11 @@ WSGI_APPLICATION = 'gameapp.wsgi.application'
 DATABASES = {
         'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'send',
-        'USER':'root',
-        'PASSWORD':'20A25B0318',
-        'HOST':'localhost',
-        'PORT':3306
+        'NAME':'Shareme',
+        'USER':'avnadmin',
+        'PASSWORD':'AVNS_2ti6b4NNhY48VDGoRn4',
+        'HOST':'mysql-52b9ccbusk-uppalapatisaikiran27-2a96.l.aivencloud.com',
+        'PORT':17033
     }
 }
 
